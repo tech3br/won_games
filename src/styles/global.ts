@@ -38,7 +38,7 @@ const GlobalStyles = createGlobalStyle`
         url('/fonts/poppins-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     }
 
-  * {
+  *, #__next {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,14 +47,16 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ${({ theme }) => css`
-      html {
-          font-size: 62.5%;
-      }
+    html {
+      font-size: 62.5%;
+    }
 
-      body {
-          font-family: ${theme.font.family};
-          font-size: ${theme.font.sizes.medium};
-      }
+    body {
+      font-family: ${theme.font.family};
+      font-size: ${theme.font.sizes.medium};
+      width: 100vw;
+      height: 100vh;
+    }
   `}
 
 
