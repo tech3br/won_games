@@ -1,7 +1,9 @@
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.div`
-  ${({ theme }) => css`
-    color: ${theme.colors.white};
+import { LogoProps } from '.'
+
+export const Wrapper = styled.div<LogoProps>`
+  ${({ theme, color }) => css`
+    color: ${theme.colors[color!]};
   `}
 `
