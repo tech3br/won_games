@@ -2,9 +2,7 @@
 
 ## Client do e-commerce Won Games - construído com base do curso React Avançado, ministrado por Willian Justen
 
-## Neste repositório adicionando meu avanço e aprendizados nesta tecnologia
-
-## Cada commit representa um avanço e uma nova funcionalidade adicionada
+## Neste repositório adiciono meus avanços e aprendizados nesta tecnologia
 
 ## Comandos
 
