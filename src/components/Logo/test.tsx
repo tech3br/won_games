@@ -1,12 +1,8 @@
 import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helpers'
+import 'jest-styled-components'
 
 import Logo from '.'
-
-//Três etapas para criação de testes:
-// 1 - Render: renderizar o componente
-// 2 - Select: Selecionar o elemento a ser testado `screen` (queries) - getByLabel...
-// 3 - Expect: assertion - asserção - comparação - análise (espero que renderize a logo branca...)
 
 describe('<Logo />', () => {
   it('should render a white label by default', () => {

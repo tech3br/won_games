@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react'
+import 'jest-styled-components'
 
 import MediaMatch from '.'
 
@@ -10,7 +11,7 @@ describe('<MediaMatch />', () => {
   beforeEach(() => {
     render(
       <>
-        <MediaMatch greatherThan="medium">
+        <MediaMatch greaterThan="medium">
           <h1 data-testid="desktop">Desktop</h1>
         </MediaMatch>
         <MediaMatch lessThan="medium">
@@ -32,6 +33,9 @@ describe('<MediaMatch />', () => {
     expect(desktopHeading.parentElement).toHaveStyleRule('display', 'block', {
       media: '(min-width: 768px)'
     })
-    expect(mobileHeading.parentElement).toHaveStyleRule('display', 'none')
+
+    expect(mobileHeading.parentElement).toHaveStyleRule('display', 'block', {
+      media: '(max-width: 768px)'
+    })
   })
 })

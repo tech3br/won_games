@@ -5,7 +5,7 @@ type breakpoint = keyof DefaultBreakpoints
 
 export type MediaMatchProps = {
   lessThan?: breakpoint
-  greatherThan?: breakpoint
+  greaterThan?: breakpoint
 }
 
 const mediaMatchModifiers = {
@@ -13,16 +13,16 @@ const mediaMatchModifiers = {
     ${media.lessThan(size)` display: block `}
   `,
 
-  greatherThan: (size: breakpoint) => css`
+  greaterThan: (size: breakpoint) => css`
     ${media.greaterThan(size)` display: block `}
   `
 }
 
 export default styled.div<MediaMatchProps>`
-  ${({ lessThan, greatherThan }) => css`
+  ${({ lessThan, greaterThan }) => css`
     display: none;
 
     ${!!lessThan && mediaMatchModifiers.lessThan(lessThan)}
-    ${!!greatherThan && mediaMatchModifiers.greatherThan(greatherThan)}
+    ${!!greaterThan && mediaMatchModifiers.greaterThan(greaterThan)}
   `}
 `

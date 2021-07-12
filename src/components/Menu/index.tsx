@@ -27,7 +27,7 @@ const Menu = ({ username }: MenuProps) => {
         <Logo hideOnMobile />
       </S.LogoWrapper>
 
-      <MediaMatch greatherThan="medium">
+      <MediaMatch greaterThan="medium">
         <S.MenuNav>
           <S.MenuLink href="#">Home</S.MenuLink>
           <S.MenuLink href="#">Explore</S.MenuLink>
@@ -42,7 +42,7 @@ const Menu = ({ username }: MenuProps) => {
           <ShoppingCartIcon aria-label="Open Shopping Cart" />
         </S.IconWrapper>
         {!username && (
-          <MediaMatch greatherThan="medium">
+          <MediaMatch greaterThan="medium">
             <Button>Sign in</Button>
           </MediaMatch>
         )}
