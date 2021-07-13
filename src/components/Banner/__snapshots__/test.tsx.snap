@@ -2,7 +2,7 @@
 
 exports[`<Banner /> should render correctly 1`] = `
 <main
-  class="styles__Wrapper-sfduid-0 hFVDzC"
+  class="styles__Wrapper-sfduid-0 ctnnPK"
 >
   <div
     aria-label="Defy death"
