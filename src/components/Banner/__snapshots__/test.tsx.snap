@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Banner /> should render correctly 1`] = `
+<main
+  class="styles__Wrapper-sfduid-0 hFVDzC"
+>
+  <div
+    aria-label="Defy death"
+    class="styles__Image-sfduid-1 iyAAKS"
+    role="img"
+    src="https://source.unsplash.com/user/willianjusten/1042x580"
+  />
+  <div
+    class="styles__Caption-sfduid-2 kguchO"
+  >
+    <h2
+      class="styles__Title-sfduid-3 kgXmBk"
+    >
+      Defy death
+    </h2>
+    <h3
+      class="styles__Subtitle-sfduid-4 bHAYop"
+    >
+      <p>
+        Play the new 
+        <strong>
+          CrashLands
+        </strong>
+         season
+      </p>
+    </h3>
+    <a
+      class="styles__Wrapper-sc-1oc9oxe-0 fcZXxR"
+      href="/games/defy-death"
+    >
+      <span>
+        Buy now
+      </span>
+    </a>
+  </div>
+</main>
+`
