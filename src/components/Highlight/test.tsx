@@ -1,6 +1,7 @@
 import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helpers'
 
+import 'jest-styled-components'
 import Highlight from '.'
 
 const props = {
@@ -40,6 +41,26 @@ describe('<Highlight />', () => {
     expect(screen.getByRole('img', { name: props.title })).toHaveAttribute(
       'src',
       '/float-image.png'
+    )
+  })
+
+  it('should render align right by default', () => {
+    const { container } = renderWithTheme(<Highlight {...props} />)
+
+    expect(container.firstChild).toHaveStyleRule(
+      'grid-template-areas',
+      "'floatimage content'"
+    )
+  })
+
+  it('should render align right by default', () => {
+    const { container } = renderWithTheme(
+      <Highlight {...props} alignment="left" />
+    )
+
+    expect(container.firstChild).toHaveStyleRule(
+      'grid-template-areas',
+      "'content floatimage'"
     )
   })
 })

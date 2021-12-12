@@ -1,11 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer /> should render 4 column topics 1`] = `
+.c5 {
+  color: #030517;
+  position: relative;
+  margin-bottom: 3.2rem;
+  font-size: 1.6rem;
+}
+
+.c5::after {
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  content: '';
+  width: 5rem;
+  border-bottom: 0.5rem solid #3CD3C1;
+}
+
+.c5::after {
+  width: 3rem;
+}
+
+.c1 {
+  color: #030517;
+  width: 11rem;
+  height: 3.3rem;
+}
+
+.c0 .c4 {
+  text-transform: uppercase;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 3.2rem;
+  margin-top: 3.2rem;
+}
+
+.c3 a,
+.c3 span {
+  display: block;
+  color: #8F8F8F;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.c3 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c6 {
+  color: #8F8F8F;
+  font-size: 1.2rem;
+  margin-top: 4.0rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
 <footer
-  class="styles__Wrapper-tjtmh5-0 JuqdT"
+  class="c0"
 >
   <div
-    class="styles__Wrapper-sc-17ij6yj-0 bQJpgP"
+    class="c1"
     color="black"
   >
     <svg
@@ -91,13 +157,13 @@ exports[`<Footer /> should render 4 column topics 1`] = `
     </svg>
   </div>
   <div
-    class="styles__Content-tjtmh5-1 dCQzVa"
+    class="c2"
   >
     <div
-      class="styles__Column-tjtmh5-2 ilQHfC"
+      class="c3"
     >
       <h2
-        class="styles__Wrapper-sc-1seh743-0 ldzxPu"
+        class="c4 c5"
         color="black"
       >
         Contact Us
@@ -109,10 +175,10 @@ exports[`<Footer /> should render 4 column topics 1`] = `
       </a>
     </div>
     <div
-      class="styles__Column-tjtmh5-2 ilQHfC"
+      class="c3"
     >
       <h2
-        class="styles__Wrapper-sc-1seh743-0 ldzxPu"
+        class="c4 c5"
         color="black"
       >
         Follow us
@@ -151,10 +217,10 @@ exports[`<Footer /> should render 4 column topics 1`] = `
       </nav>
     </div>
     <div
-      class="styles__Column-tjtmh5-2 ilQHfC"
+      class="c3"
     >
       <h2
-        class="styles__Wrapper-sc-1seh743-0 ldzxPu"
+        class="c4 c5"
         color="black"
       >
         Links
@@ -181,10 +247,10 @@ exports[`<Footer /> should render 4 column topics 1`] = `
     </div>
     <div
       aria-labelledby="footer-contact"
-      class="styles__Column-tjtmh5-2 ilQHfC"
+      class="c3"
     >
       <h2
-        class="styles__Wrapper-sc-1seh743-0 ldzxPu"
+        class="c4 c5"
         color="black"
       >
         Location
@@ -201,7 +267,7 @@ exports[`<Footer /> should render 4 column topics 1`] = `
     </div>
   </div>
   <div
-    class="styles__Copyright-tjtmh5-3 bhYvMj"
+    class="c6"
   >
     Won Games 2020 © All rights reserved.
   </div>
