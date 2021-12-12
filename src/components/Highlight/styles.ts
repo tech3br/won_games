@@ -8,9 +8,23 @@ type WrapperProps = Pick<HighlightProps, 'backgroundImage' | 'alignment'>
 const wrapperModifiers = {
   right: () => css`
     grid-template-areas: 'floatimage content';
+    grid-template-columns: 1.3fr 2fr;
+
+    ${Content} {
+      text-align: right;
+    }
   `,
   left: () => css`
     grid-template-areas: 'content floatimage';
+    grid-template-columns: 2fr 1.3fr;
+
+    ${Content} {
+      text-align: left;
+    }
+
+    ${FloatImage} {
+      justify-self: end;
+    }
   `
 }
 
@@ -22,7 +36,6 @@ export const Wrapper = styled.section<WrapperProps>`
     background-size: cover;
     height: 23rem;
     display: grid;
-    grid-template-columns: 1.3fr 2fr;
 
     &::after {
       content: '';
@@ -57,7 +70,6 @@ export const Content = styled.div`
   ${({ theme }) => css`
     grid-area: content;
     z-index: ${theme.layers.base};
-    text-align: right;
     padding: ${theme.spacings.xsmall};
   `}
 

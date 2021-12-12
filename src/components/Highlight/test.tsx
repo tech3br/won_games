@@ -4,6 +4,8 @@ import { renderWithTheme } from 'utils/tests/helpers'
 import 'jest-styled-components'
 import Highlight from '.'
 
+import * as S from './styles'
+
 const props = {
   title: 'Heading 1',
   subtitle: 'Heading 2',
@@ -51,9 +53,13 @@ describe('<Highlight />', () => {
       'grid-template-areas',
       "'floatimage content'"
     )
+
+    expect(container.firstChild).toHaveStyleRule('text-align', 'right', {
+      modifier: `${S.Content}`
+    })
   })
 
-  it('should render align right by default', () => {
+  it('should render align left by default', () => {
     const { container } = renderWithTheme(
       <Highlight {...props} alignment="left" />
     )
@@ -62,5 +68,9 @@ describe('<Highlight />', () => {
       'grid-template-areas',
       "'content floatimage'"
     )
+
+    expect(container.firstChild).toHaveStyleRule('text-align', 'left', {
+      modifier: `${S.Content}`
+    })
   })
 })
