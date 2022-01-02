@@ -47,16 +47,16 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ${({ theme }) => css`
-    html {
-      font-size: 62.5%;
-    }
+      html {
+          font-size: 62.5%;
+      }
 
-    body {
-      font-family: ${theme.font.family};
-      font-size: ${theme.font.sizes.medium};
-      width: 100vw;
-      height: 100vh;
-    }
+      body {
+          font-family: ${theme.font.family};
+          font-size: ${theme.font.sizes.medium};
+          width: 100vw;
+          height: 100vh;
+      }
   `}
 
 

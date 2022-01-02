@@ -5,4 +5,4 @@ import theme from 'styles/theme'
 import React from 'react'
 
 export const renderWithTheme = (children: React.ReactNode): RenderResult =>
-  render(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
+    render(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
